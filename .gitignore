@@ -3,4 +3,4 @@ __pycache__
 uzbekistan/
 kazakhstan/
 venv/
-*.txt
+log.txt

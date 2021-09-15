@@ -29,7 +29,7 @@ There are three entities you will get in result:
 * directory *tender_id* with *tender_id*.csv and *tender_id*.zip — detailed information about tender as in common file and archive with tender documentation.
 
 
-###Kazakhstan
+### Kazakhstan
 Scraper designed to run as a command-line utility. It receives search query as parameter.
 If your query consists of two words and more, please, take it into quotes.
 For example, `python3 kazakhstan_scraper.py "доступная среда"`.
