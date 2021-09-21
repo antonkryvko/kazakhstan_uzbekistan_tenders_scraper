@@ -1,5 +1,5 @@
-# Uzbekistan and Kazakhstan tenders scraper
-A scraper to get information about Uzbekistan and Kazakhstan state tenders.
+# Uzbekistan and Kazakhstan state purchases scraper
+A scraper to get information about Uzbekistan and Kazakhstan state purchases.
 
 ## Requirements
 ### Python
@@ -17,16 +17,16 @@ Then install required modules:
 
 ## Usage
 ### Uzbekistan
-Scraper designed to run as a command-line utility. It receives start and end date as two parameters in format `dd.mm.YYYY`.
-For example, `python3 uzbekistan_scraper.py 01.01.2021 31.01.2021`.
+Scraper designed to run as a command-line utility. It receives type of purchases (tender or competitive), start and end date as two parameters in format `dd.mm.YYYY`.
+For example, `python3 uzbekistan_scraper.py tender 01.01.2021 31.01.2021`.
 
 There is a limitation in 30-days search period. If you need longer time period, please, run scraper several times.
-There is a limitation in 2000 results per search due to service reliability.
+There is a limitation in 5000 results per search due to service reliability.
 
 There are three entities you will get in result:
-* tenders_*date*.csv — general information about tenders on *date*;
-* tenders_detailed_*date*.csv — detailed information about each tender on *date*;
-* directory *tender_id* with *tender_id*.csv and *tender_id*.zip — detailed information about tender as in common file and archive with tender documentation.
+* *purchase_type*_*date*.csv — general information about purchases on *date*;
+* *purchase_type*_detailed_*date*.csv — detailed information about each purchase on *date*;
+* directory *purchase_id* with *purchase_id*.csv and *purchase_id*.zip — detailed information about purchase as in common file and archive with purchase documentation.
 
 
 ### Kazakhstan
